@@ -19,6 +19,7 @@ export const App = () => {
 
   return (
     <>
+      <span>Test first chance in vercel</span>
       <table style={{ width: '100%', fontFamily: 'Arial' }}>
         <thead>
           <tr style={styled}>
