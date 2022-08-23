@@ -6,7 +6,7 @@ import './App.css';
 export const App = () => {
   const [count, setCount] = useState('');
   const [dataResult, setDataResult] = useState([]);
-  const styled = { textAlign: 'left', border: 'solid 1px', color: 'red' };
+  const styled = { textAlign: 'left', border: 'solid 1px', color: 'black' };
 
   axios
     .get('https://digimon-api.vercel.app/api/digimon')
@@ -19,7 +19,7 @@ export const App = () => {
 
   return (
     <>
-      <span>Second change</span>
+      <span>Last change test</span>
       <table style={{ width: '100%', fontFamily: 'Arial' }}>
         <thead>
           <tr style={styled}>
@@ -34,7 +34,7 @@ export const App = () => {
               <td style={styled}>{item.name.toUpperCase()}</td>
               <td style={styled}>{item.level.toUpperCase()}</td>
               <td style={{ border: 'solid 1px', textAlign: 'center' }}>
-                <img src={item.img} width={60} />
+                <img src={item.img} width={40} />
               </td>
             </tr>
           ))}
