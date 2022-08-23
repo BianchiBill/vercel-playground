@@ -6,7 +6,7 @@ import './App.css';
 export const App = () => {
   const [count, setCount] = useState('');
   const [dataResult, setDataResult] = useState([]);
-  const styled = { textAlign: 'left', border: 'solid 1px' };
+  const styled = { textAlign: 'left', border: 'solid 1px', color: 'red' };
 
   axios
     .get('https://digimon-api.vercel.app/api/digimon')
@@ -19,7 +19,7 @@ export const App = () => {
 
   return (
     <>
-      <span>Test first chance in vercel</span>
+      <span>Second change</span>
       <table style={{ width: '100%', fontFamily: 'Arial' }}>
         <thead>
           <tr style={styled}>
